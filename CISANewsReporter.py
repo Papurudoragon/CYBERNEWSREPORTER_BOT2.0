@@ -11,7 +11,7 @@ my_secret = os.environ['DC_THREAT_FEED_BOT_SECRET'] #Auth
 
 client = discord.Client(command_prefix='!', intents=discord.Intents.default() )
 RSS_FEED = 'https://www.cisa.gov/uscert/ncas/current-activity.xml'
-CHANNEL_ID = 1066453203333423285 # ID of your Discord channel
+CHANNEL_ID = '<ID>' # ID of your Discord channel
 latest_link = None
 
 @client.event
@@ -41,19 +41,6 @@ except discord.errors.HTTPException:
     os.system("python restarter.py")
     os.system('kill 1')
 
-
-
-
-
-
-
   
 ####### To Do: #######
-
-# Test event not working and needs troublesheeoting..ab
-  
-# @client.event
-# async def on_message(message):
-#     if message.content.startswith('!test'):
-#         response = f'Hello {message.author.name}, the test is successful'
-#         await message.channel.send(response)
+# This project sends dups when server crashes. Need to fix that
