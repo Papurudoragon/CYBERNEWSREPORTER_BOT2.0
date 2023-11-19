@@ -1,4 +1,4 @@
-"""CISA news bot created by Van Perry 
+"""CISA news bot created by ViPv4 (Papv2)
 
 This bot works by pulling an rss feed from CISA.gov. there is a 10 minute timer to check for a new link, and post if a new link exists."""
 
